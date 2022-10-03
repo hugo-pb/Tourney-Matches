@@ -1,4 +1,6 @@
 import React from "react";
+import playerData from "../data/playerData";
+import matchData from "../data/matchData";
 
 const Playerlist = () => {
   return (
