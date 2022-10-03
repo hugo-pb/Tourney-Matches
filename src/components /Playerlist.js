@@ -1,11 +1,8 @@
 import React from "react";
 import Player from "./Player";
-import { addWinsToPlayers, preparePlayerData } from "../helpers/playerHelpers";
 
 const PlayerList = (props) => {
-  const playerDataArray = preparePlayerData(props.playerData);
-  const parsedPlayerData = addWinsToPlayers(playerDataArray, props.matchData);
-  const onePlayer = parsedPlayerData[0];
+  const onePlayer = props.playerData[0];
   return (
     <section className="PlayerList">
       <h1>Current participating players</h1>
